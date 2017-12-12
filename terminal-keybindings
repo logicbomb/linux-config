@@ -1,0 +1,10 @@
+[/]
+new-tab='<Hyper>t'
+prev-tab='<Hyper>l'
+new-window='<Hyper>n'
+close-tab='<Hyper>w'
+close-window='<Shift><Hyper>w'
+move-tab-left='<Shift><Hyper>l'
+move-tab-right='<Shift><Hyper>h'
+detach-tab='<Hyper>d'
+next-tab='<Hyper>h'

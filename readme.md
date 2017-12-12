@@ -22,8 +22,14 @@ Line 53: `modifier_map Mod4   { <SUPR> };` -> `modifier_map Mod3   { <SUPR> };`
 After the Hyper key has been mapped properly setup the shell level key-bindings by running
 `dconf load /org/gnome/desktop/wm/keybindings/ < keybindings`
 
-## Gnome Tweaks
+## Terminal
+### User Profile
+`dconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ < terminal-profile`
 
+### Keybindings
+`dconf load /org/gnome/terminal/legacy/keybindings/ < terminal-keybindings`
+
+## Gnome Tweaks
 ### Extensions
 ![Extension](img/extensions.png)
 
