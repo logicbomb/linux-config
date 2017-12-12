@@ -1,23 +1,5 @@
 # Some configuration for my system
 
-## oh-my-zsh
-### Install
-+ `sudo apt-get install zsh`
-+ `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-+ logout & login
-
-### Spaceship Theme
-```
-curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
-```
-
-### Customizing the shell 
-
-Copy files into `$ZSH_CUSTOM` (default `~/.oh-my-zsh/custom`) and they get sourced when the shell starts
-
-+ **aliases.zsh** a file that contains command aliases
-+ **path.zsh** adjusts `$PATH`
-
 ## Setting the Hyper Key
 For some reason Ubuntu treats the *Hyper* key the same as the *Super* key, they are both assigned to `Mod3`.  Further complicating the issue Gnome doesn't source `.xinit` on startup so it's difficult to run `xmodmap`when a desktop session starts.  The best way I found is to modify the keyboard codes used in the X session by modifying the `xkb` configuration.  
 
@@ -36,9 +18,9 @@ Line 53: `modifier_map Mod4   { <SUPR> };` -> `modifier_map Mod3   { <SUPR> };`
 
 **NOTE** The drawback to this method is that if an update or program makes a change to the keyboard configuration file, changes are lost and need to be reapplied.  
 
-## Set up Python
-1. Install pip: `sudo python get-pip.py`
-1. Install virtualenv `sudo pip install virtualenv`
+## Keybindings
+After the Hyper key has been mapped properly setup the shell level key-bindings by running
+`dconf load /org/gnome/desktop/wm/keybindings/ < keybindings`
 
 ## Gnome Tweaks
 
@@ -53,4 +35,27 @@ Line 53: `modifier_map Mod4   { <SUPR> };` -> `modifier_map Mod3   { <SUPR> };`
 
 ### Workspaces
 ![Workspaces](img/workspaces.png)
+
+## oh-my-zsh
+### Install
++ `sudo apt-get install zsh`
++ `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
++ logout & login
+
+### Spaceship Theme
+```
+curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
+```
+
+### Customizing the shell 
+
+Copy files into `$ZSH_CUSTOM` (default `~/.oh-my-zsh/custom`) and they get sourced when the shell starts
+
++ **aliases.zsh** a file that contains command aliases
++ **path.zsh** adjusts `$PATH`
+
+## Set up Python
+1. Install pip: `sudo python get-pip.py`
+1. Install virtualenv `sudo pip install virtualenv`
+
 
