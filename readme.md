@@ -36,4 +36,6 @@ Line 53: `modifier_map Mod4   { <SUPR> };` -> `modifier_map Mod3   { <SUPR> };`
 
 **NOTE** The drawback to this method is that if an update or program makes a change to the keyboard configuration file, changes are lost and need to be reapplied.  
 
-
+## Set up Python
+1. Install pip: `sudo python get-pip.py`
+1. Install virtualenv `sudo pip install virtualenv`
