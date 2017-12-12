@@ -39,3 +39,18 @@ Line 53: `modifier_map Mod4   { <SUPR> };` -> `modifier_map Mod3   { <SUPR> };`
 ## Set up Python
 1. Install pip: `sudo python get-pip.py`
 1. Install virtualenv `sudo pip install virtualenv`
+
+## Gnome Tweaks
+
+### Extensions
+![Extension](img/extensions.png)
+
+### Top Bar
+![Top Bar](img/topbar.png)
+
+### Typing
+![Typing](img/typing.png)
+
+### Workspaces
+![Workspaces](img/workspaces.png)
+
